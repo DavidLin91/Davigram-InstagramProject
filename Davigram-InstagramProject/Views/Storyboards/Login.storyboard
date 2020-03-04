@@ -85,7 +85,7 @@
                                 <color key="textColor" red="1" green="0.45065454459999998" blue="0.4742504917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAVIGRAM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USh-vr-9gg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SNAPFLIX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USh-vr-9gg">
                                 <rect key="frame" x="20" y="74" width="374" height="41"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="35"/>
                                 <color key="textColor" red="0.2164453566" green="0.19412335750000001" blue="0.64709734919999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -117,8 +117,13 @@
                         <viewLayoutGuide key="safeArea" id="fy7-Rx-YVA"/>
                     </view>
                     <connections>
+                        <outlet property="accountStateButton" destination="0Jd-1v-toS" id="njc-Xd-4Ag"/>
+                        <outlet property="accountStateMessageLabel" destination="oDa-Dq-BpK" id="6nc-tA-QBB"/>
                         <outlet property="animationView" destination="XbD-DM-gor" id="t7v-Ub-267"/>
                         <outlet property="containerView" destination="x4O-gX-w07" id="3BC-br-EJU"/>
+                        <outlet property="emailTextField" destination="EbT-xZ-mF0" id="C3y-g3-Y0j"/>
+                        <outlet property="loginButton" destination="Mr0-0k-9Dp" id="8Iz-0N-Uju"/>
+                        <outlet property="passwordTextField" destination="kma-XS-b2D" id="hqe-zY-skZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlV-xa-JA7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

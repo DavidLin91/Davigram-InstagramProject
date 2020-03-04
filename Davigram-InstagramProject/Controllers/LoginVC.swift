@@ -9,12 +9,23 @@
 import UIKit
 import Lottie
 
+enum AccountState {
+    case existingUser
+    case newUser
+}
 
 class LoginVC: UIViewController {
     @IBOutlet weak var animationView: Lottie.AnimationView!
-    
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var accountStateButton: UIButton!
+    @IBOutlet weak var accountStateMessageLabel: UILabel!
     
+    private var accountState: AccountState = .existingUser
+    
+    private var authSession = AuthenticationSession()
     
     override func viewWillLayoutSubviews() {
         containerView.layer.cornerRadius = 5.0
