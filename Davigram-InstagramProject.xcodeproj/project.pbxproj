@@ -3,17 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		63371461240F02CB0040AD29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63371460240F02CB0040AD29 /* AppDelegate.swift */; };
 		63371463240F02CB0040AD29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63371462240F02CB0040AD29 /* SceneDelegate.swift */; };
-		63371465240F02CB0040AD29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63371464240F02CB0040AD29 /* ViewController.swift */; };
 		63371468240F02CB0040AD29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63371466240F02CB0040AD29 /* Main.storyboard */; };
 		6337146A240F02D30040AD29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63371469240F02D30040AD29 /* Assets.xcassets */; };
 		6337146D240F02D30040AD29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6337146B240F02D30040AD29 /* LaunchScreen.storyboard */; };
 		63371478240F02D30040AD29 /* Davigram_InstagramProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63371477240F02D30040AD29 /* Davigram_InstagramProjectTests.swift */; };
+		63371488240F05600040AD29 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63371487240F05600040AD29 /* Login.storyboard */; };
+		6337148B240F06050040AD29 /* UploadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337148A240F06050040AD29 /* UploadImageVC.swift */; };
+		6337148D240F06270040AD29 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337148C240F06270040AD29 /* ProfileVC.swift */; };
+		6337148F240F06360040AD29 /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337148E240F06360040AD29 /* ExploreVC.swift */; };
+		63371491240F06E30040AD29 /* ExploreDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63371490240F06E30040AD29 /* ExploreDetailVC.swift */; };
+		63371493240F07160040AD29 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63371492240F07160040AD29 /* LoginVC.swift */; };
+		635A23D9240F105800A3AAEE /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A23D8240F105800A3AAEE /* LaunchView.swift */; };
+		635A23DB240F156600A3AAEE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A23DA240F156600A3AAEE /* TabBarController.swift */; };
+		635A23DD240F167E00A3AAEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 635A23DC240F167E00A3AAEE /* GoogleService-Info.plist */; };
+		635A23E0240F1B9900A3AAEE /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A23DF240F1B9900A3AAEE /* UIViewController+Alerts.swift */; };
+		635A23E2240F1BD000A3AAEE /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A23E1240F1BD000A3AAEE /* UIViewController+Navigation.swift */; };
+		635A23E6240F5FC500A3AAEE /* LaunchAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 635A23E5240F5FC500A3AAEE /* LaunchAnimation.json */; };
+		8DC115A6386F4FB85DBC00E6 /* Pods_Davigram_InstagramProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EAD1A41733A88F907EDBAC /* Pods_Davigram_InstagramProjectTests.framework */; };
+		C2F3A38E1A239422ABE30FAA /* Pods_Davigram_InstagramProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117EEDFAAA54C3C9D6EC7433 /* Pods_Davigram_InstagramProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01C1498A5D4646E6CAFA456A /* Pods-Davigram-InstagramProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Davigram-InstagramProject.release.xcconfig"; path = "Target Support Files/Pods-Davigram-InstagramProject/Pods-Davigram-InstagramProject.release.xcconfig"; sourceTree = "<group>"; };
+		117EEDFAAA54C3C9D6EC7433 /* Pods_Davigram_InstagramProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Davigram_InstagramProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6337145D240F02CB0040AD29 /* Davigram-InstagramProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Davigram-InstagramProject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63371460240F02CB0040AD29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63371462240F02CB0040AD29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63371464240F02CB0040AD29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63371467240F02CB0040AD29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63371469240F02D30040AD29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6337146C240F02D30040AD29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +52,22 @@
 		63371473240F02D30040AD29 /* Davigram-InstagramProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Davigram-InstagramProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63371477240F02D30040AD29 /* Davigram_InstagramProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Davigram_InstagramProjectTests.swift; sourceTree = "<group>"; };
 		63371479240F02D30040AD29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63371487240F05600040AD29 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		6337148A240F06050040AD29 /* UploadImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageVC.swift; sourceTree = "<group>"; };
+		6337148C240F06270040AD29 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		6337148E240F06360040AD29 /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
+		63371490240F06E30040AD29 /* ExploreDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDetailVC.swift; sourceTree = "<group>"; };
+		63371492240F07160040AD29 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		635A23D8240F105800A3AAEE /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		635A23DA240F156600A3AAEE /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		635A23DC240F167E00A3AAEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		635A23DF240F1B9900A3AAEE /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		635A23E1240F1BD000A3AAEE /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		635A23E5240F5FC500A3AAEE /* LaunchAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchAnimation.json; sourceTree = "<group>"; };
+		746FE4D1455749ECD924133B /* Pods-Davigram-InstagramProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Davigram-InstagramProject.debug.xcconfig"; path = "Target Support Files/Pods-Davigram-InstagramProject/Pods-Davigram-InstagramProject.debug.xcconfig"; sourceTree = "<group>"; };
+		8B4DAD7F648BF56FDDBBA117 /* Pods-Davigram-InstagramProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Davigram-InstagramProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-Davigram-InstagramProjectTests/Pods-Davigram-InstagramProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6EAD1A41733A88F907EDBAC /* Pods_Davigram_InstagramProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Davigram_InstagramProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE51271F5F60F7A6D7E6F2AC /* Pods-Davigram-InstagramProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Davigram-InstagramProjectTests.release.xcconfig"; path = "Target Support Files/Pods-Davigram-InstagramProjectTests/Pods-Davigram-InstagramProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F3A38E1A239422ABE30FAA /* Pods_Davigram_InstagramProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +83,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC115A6386F4FB85DBC00E6 /* Pods_Davigram_InstagramProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B42A5BD15AAC592A0833049 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				746FE4D1455749ECD924133B /* Pods-Davigram-InstagramProject.debug.xcconfig */,
+				01C1498A5D4646E6CAFA456A /* Pods-Davigram-InstagramProject.release.xcconfig */,
+				8B4DAD7F648BF56FDDBBA117 /* Pods-Davigram-InstagramProjectTests.debug.xcconfig */,
+				FE51271F5F60F7A6D7E6F2AC /* Pods-Davigram-InstagramProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6249175ED03418B13BD32D39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				117EEDFAAA54C3C9D6EC7433 /* Pods_Davigram_InstagramProject.framework */,
+				F6EAD1A41733A88F907EDBAC /* Pods_Davigram_InstagramProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		63371454240F02CB0040AD29 = {
 			isa = PBXGroup;
 			children = (
 				6337145F240F02CB0040AD29 /* Davigram-InstagramProject */,
 				63371476240F02D30040AD29 /* Davigram-InstagramProjectTests */,
 				6337145E240F02CB0040AD29 /* Products */,
+				3B42A5BD15AAC592A0833049 /* Pods */,
+				6249175ED03418B13BD32D39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +133,14 @@
 		6337145F240F02CB0040AD29 /* Davigram-InstagramProject */ = {
 			isa = PBXGroup;
 			children = (
-				63371460240F02CB0040AD29 /* AppDelegate.swift */,
-				63371462240F02CB0040AD29 /* SceneDelegate.swift */,
-				63371464240F02CB0040AD29 /* ViewController.swift */,
-				63371466240F02CB0040AD29 /* Main.storyboard */,
-				63371469240F02D30040AD29 /* Assets.xcassets */,
-				6337146B240F02D30040AD29 /* LaunchScreen.storyboard */,
+				63371482240F035D0040AD29 /* APIClient */,
+				63371485240F03900040AD29 /* Model */,
+				63371484240F038B0040AD29 /* Views */,
+				63371483240F03890040AD29 /* Controllers */,
+				635A23DE240F1B6200A3AAEE /* Extension */,
+				63371489240F05890040AD29 /* Supporting Files */,
 				6337146E240F02D30040AD29 /* Info.plist */,
+				635A23DC240F167E00A3AAEE /* GoogleService-Info.plist */,
 			);
 			path = "Davigram-InstagramProject";
 			sourceTree = "<group>";
@@ -99,6 +154,80 @@
 			path = "Davigram-InstagramProjectTests";
 			sourceTree = "<group>";
 		};
+		63371482240F035D0040AD29 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		63371483240F03890040AD29 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63371492240F07160040AD29 /* LoginVC.swift */,
+				6337148E240F06360040AD29 /* ExploreVC.swift */,
+				63371490240F06E30040AD29 /* ExploreDetailVC.swift */,
+				6337148A240F06050040AD29 /* UploadImageVC.swift */,
+				6337148C240F06270040AD29 /* ProfileVC.swift */,
+				635A23DA240F156600A3AAEE /* TabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		63371484240F038B0040AD29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63371486240F04BA0040AD29 /* Storyboards */,
+				635A23D8240F105800A3AAEE /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63371485240F03900040AD29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63371486240F04BA0040AD29 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				63371487240F05600040AD29 /* Login.storyboard */,
+				6337146B240F02D30040AD29 /* LaunchScreen.storyboard */,
+				63371466240F02CB0040AD29 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		63371489240F05890040AD29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				635A23D5240F101500A3AAEE /* LottieAnimation */,
+				63371469240F02D30040AD29 /* Assets.xcassets */,
+				63371460240F02CB0040AD29 /* AppDelegate.swift */,
+				63371462240F02CB0040AD29 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		635A23D5240F101500A3AAEE /* LottieAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				635A23E5240F5FC500A3AAEE /* LaunchAnimation.json */,
+			);
+			path = LottieAnimation;
+			sourceTree = "<group>";
+		};
+		635A23DE240F1B6200A3AAEE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				635A23DF240F1B9900A3AAEE /* UIViewController+Alerts.swift */,
+				635A23E1240F1BD000A3AAEE /* UIViewController+Navigation.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6337147C240F02D30040AD29 /* Build configuration list for PBXNativeTarget "Davigram-InstagramProject" */;
 			buildPhases = (
+				98C77B0E70CFD45CB044C0B8 /* [CP] Check Pods Manifest.lock */,
 				63371459240F02CB0040AD29 /* Sources */,
 				6337145A240F02CB0040AD29 /* Frameworks */,
 				6337145B240F02CB0040AD29 /* Resources */,
+				2312BB14A8688F1CE9F04E26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6337147F240F02D30040AD29 /* Build configuration list for PBXNativeTarget "Davigram-InstagramProjectTests" */;
 			buildPhases = (
+				82E0D70DE717122CDDE6EEF3 /* [CP] Check Pods Manifest.lock */,
 				6337146F240F02D30040AD29 /* Sources */,
 				63371470240F02D30040AD29 /* Frameworks */,
 				63371471240F02D30040AD29 /* Resources */,
@@ -180,9 +312,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63371488240F05600040AD29 /* Login.storyboard in Resources */,
+				635A23E6240F5FC500A3AAEE /* LaunchAnimation.json in Resources */,
 				6337146D240F02D30040AD29 /* LaunchScreen.storyboard in Resources */,
 				6337146A240F02D30040AD29 /* Assets.xcassets in Resources */,
 				63371468240F02CB0040AD29 /* Main.storyboard in Resources */,
+				635A23DD240F167E00A3AAEE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +330,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2312BB14A8688F1CE9F04E26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Davigram-InstagramProject/Pods-Davigram-InstagramProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Davigram-InstagramProject/Pods-Davigram-InstagramProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Davigram-InstagramProject/Pods-Davigram-InstagramProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82E0D70DE717122CDDE6EEF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Davigram-InstagramProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98C77B0E70CFD45CB044C0B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Davigram-InstagramProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63371459240F02CB0040AD29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63371465240F02CB0040AD29 /* ViewController.swift in Sources */,
+				6337148D240F06270040AD29 /* ProfileVC.swift in Sources */,
+				635A23D9240F105800A3AAEE /* LaunchView.swift in Sources */,
+				63371491240F06E30040AD29 /* ExploreDetailVC.swift in Sources */,
+				635A23E0240F1B9900A3AAEE /* UIViewController+Alerts.swift in Sources */,
+				635A23DB240F156600A3AAEE /* TabBarController.swift in Sources */,
+				63371493240F07160040AD29 /* LoginVC.swift in Sources */,
 				63371461240F02CB0040AD29 /* AppDelegate.swift in Sources */,
+				6337148F240F06360040AD29 /* ExploreVC.swift in Sources */,
 				63371463240F02CB0040AD29 /* SceneDelegate.swift in Sources */,
+				6337148B240F06050040AD29 /* UploadImageVC.swift in Sources */,
+				635A23E2240F1BD000A3AAEE /* UIViewController+Navigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +567,7 @@
 		};
 		6337147D240F02D30040AD29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 746FE4D1455749ECD924133B /* Pods-Davigram-InstagramProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +586,7 @@
 		};
 		6337147E240F02D30040AD29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01C1498A5D4646E6CAFA456A /* Pods-Davigram-InstagramProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +605,7 @@
 		};
 		63371480240F02D30040AD29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B4DAD7F648BF56FDDBBA117 /* Pods-Davigram-InstagramProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +628,7 @@
 		};
 		63371481240F02D30040AD29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE51271F5F60F7A6D7E6F2AC /* Pods-Davigram-InstagramProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
