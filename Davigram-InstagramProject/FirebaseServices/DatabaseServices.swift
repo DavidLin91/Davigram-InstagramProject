@@ -17,7 +17,7 @@ class DatabaseService {
     // let's get a rrference to the Firebase Firestore database
     private let db = Firestore.firestore()
     
-    public func createPicture(photoDescription: String, category: Category, postedDate: Date, userName: String, completion: @escaping (Result<Bool, Error>) -> ()) {
+    public func createPicture(photoDescription: String, category: String, userName: String, completion: @escaping (Result<String, Error>) -> ()) {
         
         guard let user = Auth.auth().currentUser else { return }
         
@@ -26,12 +26,14 @@ class DatabaseService {
         // if items collection "item" is not yet created, this will automatically create the collection
         let documentRef = db.collection(DatabaseService.photosCollection).document()
         
+        
+        
         // create a document in our "items" collection
-        db.collection(DatabaseService.photosCollection).document(documentRef.documentID).setData(["photoDescription": photoDescription, "category": category, "displayName":documentRef.documentID , "postedDate": Timestamp(date: Date ()), "userName": userName, "userId": user.uid, "categoryName": category]) { (error) in
+        db.collection(DatabaseService.photosCollection).document(documentRef.documentID).setData(["photoDescription": photoDescription, "category": category, "displayName":documentRef.documentID , "postedDate": Timestamp(date: Date()), "userName": userName, "userId": user.uid, "categoryName": category]) { (error) in
             if let error = error {
                 completion(.failure(error))
             } else {
-                completion(.success(true))
+                completion(.success(documentRef.documentID))
             }
         }
     }

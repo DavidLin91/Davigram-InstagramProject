@@ -13,16 +13,8 @@ struct Photo {
     let postedDate: Date
     let userName: String
     let userId: String
-    let photo: String
-    let photoDescription: String
-    let category: Category
+    let photoURL: String
+    let photoText: String
+    let category: String
 }
 
-struct Category {
-    let funny: String
-    let nsfw: String
-    let travel: String
-    let food: String
-    let fitness: String
-    let hobby: String
-}

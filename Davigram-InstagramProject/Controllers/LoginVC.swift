@@ -22,6 +22,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var accountStateButton: UIButton!
     @IBOutlet weak var accountStateMessageLabel: UILabel!
+    @IBOutlet weak var errorLabel: UILabel!
     
     private var accountState: AccountState = .existingUser
     
@@ -29,6 +30,7 @@ class LoginVC: UIViewController {
     
     override func viewWillLayoutSubviews() {
         containerView.layer.cornerRadius = 5.0
+        loginButton.layer.cornerRadius = 5.0
     }
     
     override func viewDidLoad() {
@@ -41,5 +43,82 @@ class LoginVC: UIViewController {
         animationView.loopMode = .loop
         animationView.play()
     }
-
+    
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        guard let email = emailTextField.text,
+            !email.isEmpty,
+            let password = passwordTextField.text,
+            !password.isEmpty else {
+                print("missing fields")
+                return
+        }
+        continueLoginFlow(email: email, password: password)
+    }
+    
+    private func continueLoginFlow(email: String, password: String) {
+        if accountState == .existingUser {
+            authSession.signExistingUser(email: email, password: password) { [weak self] (result) in
+                switch result {
+                case .failure(let error):
+                    DispatchQueue.main.async {
+                        self?.errorLabel.text = "\(error.localizedDescription)"
+                        self?.errorLabel.textColor = .systemRed
+                    }
+                case .success(let data):
+                    DispatchQueue.main.async {
+                        self?.navigateToMainView()
+                    }
+                }
+            }
+        } else {
+            authSession.createNewUser(email: email, password: password) { [weak self] (result) in
+                switch result {
+                case .failure(let error):
+                    DispatchQueue.main.async {
+                        self?.errorLabel.text = "\(error.localizedDescription)"
+                        self?.errorLabel.textColor = .systemRed
+                    }
+                case .success(let newUser):
+                    DispatchQueue.main.async {
+                        self?.navigateToMainView()
+                    }
+                }
+            }
+        }
+    }
+    
+    private func navigateToMainView() {
+        UIViewController.showViewController(storyboardName: "Main", viewControllerId: "TabBarController")
+    }
+    
+    private func clearErrorLabel() {
+        errorLabel.text = ""
+    }
+    
+    @IBAction func toggleAccountState(_ sender: UIButton) {
+        // change the account login state
+        accountState = accountState == .existingUser ? .newUser : .existingUser
+        
+        // animation duration
+        let duration: TimeInterval = 1.0
+        
+        if accountState == .existingUser {
+            UIView.transition(with: containerView, duration: duration, options: [.transitionCrossDissolve], animations: {
+                self.loginButton.setTitle("Login", for: .normal)
+                self.accountStateMessageLabel.text = "Don't have an account ? Click"
+                self.accountStateButton.setTitle("SIGNUP", for: .normal)
+            }, completion: nil)
+        } else {
+            UIView.transition(with: containerView, duration: duration, options: [.transitionCrossDissolve], animations: {
+                self.loginButton.setTitle("Sign Up", for: .normal)
+                self.accountStateMessageLabel.text = "Already have an account ?"
+                self.accountStateButton.setTitle("LOGIN", for: .normal)
+            }, completion: nil)
+        }
+    }
+    
+    
+    
+    
+    
 }
