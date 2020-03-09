@@ -205,8 +205,8 @@
 		63371486240F04BA0040AD29 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				63371487240F05600040AD29 /* Login.storyboard */,
 				6337146B240F02D30040AD29 /* LaunchScreen.storyboard */,
+				63371487240F05600040AD29 /* Login.storyboard */,
 				63371466240F02CB0040AD29 /* Main.storyboard */,
 			);
 			path = Storyboards;

@@ -99,7 +99,7 @@
                                     <constraint firstAttribute="height" constant="250" id="nJt-ap-gWr"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Screen Shot 2020-03-09 at 5.45.51 PM" translatesAutoresizingMaskIntoConstraints="NO" id="MW3-X7-AbG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Screen Shot 2020-03-09 at 6.59.08 PM" translatesAutoresizingMaskIntoConstraints="NO" id="MW3-X7-AbG">
                                 <rect key="frame" x="25" y="59" width="364" height="128"/>
                             </imageView>
                         </subviews>
@@ -140,6 +140,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2020-03-09 at 5.45.51 PM" width="612" height="258"/>
+        <image name="Screen Shot 2020-03-09 at 6.59.08 PM" width="590" height="228"/>
     </resources>
 </document>
