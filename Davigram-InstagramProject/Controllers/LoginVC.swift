@@ -36,6 +36,8 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startAnimation()
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     func startAnimation() {
@@ -118,7 +120,12 @@ class LoginVC: UIViewController {
     }
     
     
-    
-    
-    
+}
+
+extension LoginVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+            return true
+        
+    }
 }

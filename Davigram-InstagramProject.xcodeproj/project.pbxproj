@@ -29,8 +29,8 @@
 		635A23F524100B0B00A3AAEE /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A23F424100B0B00A3AAEE /* UIImage+Extensions.swift */; };
 		635A23FB241141C500A3AAEE /* StorageServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A23FA241141C500A3AAEE /* StorageServices.swift */; };
 		63BBB3242411C9A3001A360D /* AddImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BBB3232411C9A3001A360D /* AddImageVC.swift */; };
-		63BBB33D2416F41C001A360D /* LaunchAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 63BBB33C2416F41C001A360D /* LaunchAnimation.json */; };
 		63FB406C2417CA6A001F4606 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FB406B2417CA6A001F4606 /* CollectionViewCell.swift */; };
+		63FB406E24182B56001F4606 /* LaunchAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 63FB406D24182B56001F4606 /* LaunchAnimation.json */; };
 		8DC115A6386F4FB85DBC00E6 /* Pods_Davigram_InstagramProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EAD1A41733A88F907EDBAC /* Pods_Davigram_InstagramProjectTests.framework */; };
 		C2F3A38E1A239422ABE30FAA /* Pods_Davigram_InstagramProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117EEDFAAA54C3C9D6EC7433 /* Pods_Davigram_InstagramProject.framework */; };
 /* End PBXBuildFile section */
@@ -74,8 +74,8 @@
 		635A23F424100B0B00A3AAEE /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		635A23FA241141C500A3AAEE /* StorageServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServices.swift; sourceTree = "<group>"; };
 		63BBB3232411C9A3001A360D /* AddImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageVC.swift; sourceTree = "<group>"; };
-		63BBB33C2416F41C001A360D /* LaunchAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchAnimation.json; sourceTree = "<group>"; };
 		63FB406B2417CA6A001F4606 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		63FB406D24182B56001F4606 /* LaunchAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchAnimation.json; sourceTree = "<group>"; };
 		746FE4D1455749ECD924133B /* Pods-Davigram-InstagramProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Davigram-InstagramProject.debug.xcconfig"; path = "Target Support Files/Pods-Davigram-InstagramProject/Pods-Davigram-InstagramProject.debug.xcconfig"; sourceTree = "<group>"; };
 		8B4DAD7F648BF56FDDBBA117 /* Pods-Davigram-InstagramProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Davigram-InstagramProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-Davigram-InstagramProjectTests/Pods-Davigram-InstagramProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6EAD1A41733A88F907EDBAC /* Pods_Davigram_InstagramProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Davigram_InstagramProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,7 +229,7 @@
 		635A23D5240F101500A3AAEE /* LottieAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				63BBB33C2416F41C001A360D /* LaunchAnimation.json */,
+				63FB406D24182B56001F4606 /* LaunchAnimation.json */,
 			);
 			path = LottieAnimation;
 			sourceTree = "<group>";
@@ -339,7 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63371488240F05600040AD29 /* Login.storyboard in Resources */,
-				63BBB33D2416F41C001A360D /* LaunchAnimation.json in Resources */,
+				63FB406E24182B56001F4606 /* LaunchAnimation.json in Resources */,
 				6337146D240F02D30040AD29 /* LaunchScreen.storyboard in Resources */,
 				6337146A240F02D30040AD29 /* Assets.xcassets in Resources */,
 				63371468240F02CB0040AD29 /* Main.storyboard in Resources */,

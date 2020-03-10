@@ -18,11 +18,11 @@ class ExploreVC: UIViewController {
     @IBOutlet weak var hobbyCV: UICollectionView!
     @IBOutlet weak var travelCV: UICollectionView!
     @IBOutlet weak var nsfwCV: UICollectionView!
+
     
     
     private var listener: ListenerRegistration?
     
-    @IBOutlet weak var blurView: UIView!
     
     private var newPhotos = [Photo]() {
         didSet {
@@ -111,12 +111,12 @@ class ExploreVC: UIViewController {
                     }
                 } else if let snapshot = snapshot {
                     let photos = snapshot.documents.map { Photo($0.data())}
-                    self?.newPhotos = photos.filter{$0.category == "Nsfw"}
+                    self?.nsfwPhotos = photos.filter{$0.category == "Nsfw"}
                     self?.travelPhotos = photos.filter{$0.category == "Travel"}
-                    self?.comedyPhotos = photos.filter{$0.category == "Comedy"}
+                    self?.comedyPhotos = photos.filter{$0.category == "Funny"}
                     self?.foodPhotos = photos.filter{$0.category == "Food"}
                     self?.hobbyPhotos = photos.filter{$0.category == "Hobby"}
-                    self?.nsfwPhotos = photos.filter{$0.category == "Nsfw"}
+                    self?.fitnessPhotos = photos.filter{$0.category == "Fitness"}
                     self?.newPhotos = photos.filter{$0.category == "New"}
                 }
             })
@@ -128,8 +128,21 @@ class ExploreVC: UIViewController {
     }
     
     
+    @IBAction func nsfwButtonPressed(_ sender: UIButton) {
+        
+        showAlert(title: "Restricted", message: "Please contact David for payment options.")
+        
+//        let alertController = UIAlertController(title: "Are You 18 Years of Age?", message: nil, preferredStyle: .actionSheet)
+//        let yesAction = UIAlertAction(title: "Yes", style: .default)
+//        return
+//        let noAction = UIAlertAction(title: "No", style: .default)
+//       return
+//        alertController.addAction(yesAction)
+//        alertController.addAction(noAction)
+//        present(alertController, animated: true)
+    }
+    
 }
-
 
 extension ExploreVC: UICollectionViewDataSource {
     
@@ -153,7 +166,7 @@ extension ExploreVC: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         if collectionView == self.newCV {
             cell.configureCell(for: newPhotos[indexPath.row])
         } else if collectionView == comedyCV {
