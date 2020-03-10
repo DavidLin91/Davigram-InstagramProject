@@ -18,3 +18,9 @@ struct Photo {
     let category: String
 }
 
+extension Photo {
+    init(_ dictionary: [String: Any]) {
+        self.photoId = dictionary["photoId"] as? String ?? "no item name"
+        
+    }
+}

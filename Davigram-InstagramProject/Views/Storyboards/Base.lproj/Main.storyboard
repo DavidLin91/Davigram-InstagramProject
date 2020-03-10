@@ -199,10 +199,10 @@
             </objects>
             <point key="canvasLocation" x="-372" y="-1069"/>
         </scene>
-        <!--View Controller-->
+        <!--ExploreVC-->
         <scene sceneID="8tw-z4-SJ7">
             <objects>
-                <viewController id="N7a-ne-EdF" sceneMemberID="viewController">
+                <viewController id="N7a-ne-EdF" customClass="ExploreVC" customModule="Davigram_InstagramProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GCX-o7-ROe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,15 +232,29 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IqH-ZC-t0O">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="IqH-ZC-t0O" customClass="CollectionViewCell" customModule="Davigram_InstagramProject" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="27.5" width="275" height="195"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6m5-MW-jj9">
                                                             <rect key="frame" x="0.0" y="0.0" width="275" height="195"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C4l-Qf-3P9">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="275" height="195"/>
+                                                                </imageView>
+                                                            </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="C4l-Qf-3P9" secondAttribute="bottom" constant="0.01" id="8om-YN-jbh"/>
+                                                                <constraint firstItem="C4l-Qf-3P9" firstAttribute="leading" secondItem="6m5-MW-jj9" secondAttribute="leading" constant="0.01" id="K9C-fk-2rc"/>
+                                                                <constraint firstItem="C4l-Qf-3P9" firstAttribute="top" secondItem="6m5-MW-jj9" secondAttribute="top" constant="0.01" id="KhF-ii-v87"/>
+                                                                <constraint firstAttribute="trailing" secondItem="C4l-Qf-3P9" secondAttribute="trailing" constant="0.01" id="nDG-9A-Qij"/>
+                                                            </constraints>
                                                         </collectionViewCellContentView>
                                                         <size key="customSize" width="275" height="195"/>
+                                                        <connections>
+                                                            <outlet property="cellImage" destination="C4l-Qf-3P9" id="8Yl-H0-N8h"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
@@ -263,15 +277,29 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hyS-Me-Ysb">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" reuseIdentifier="CollectionViewCell" id="hyS-Me-Ysb" customClass="CollectionViewCell" customModule="Davigram_InstagramProject" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="11.5" width="219" height="152"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8gd-Nt-nLg">
                                                             <rect key="frame" x="0.0" y="0.0" width="219" height="152"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FwY-2t-9rj">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="219" height="152"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="FwY-2t-9rj" firstAttribute="top" secondItem="8gd-Nt-nLg" secondAttribute="top" constant="0.01" id="JqI-34-Q0j"/>
+                                                                <constraint firstAttribute="trailing" secondItem="FwY-2t-9rj" secondAttribute="trailing" constant="0.01" id="Xjy-7j-eaN"/>
+                                                                <constraint firstAttribute="bottom" secondItem="FwY-2t-9rj" secondAttribute="bottom" constant="0.01" id="neZ-5r-wER"/>
+                                                                <constraint firstItem="FwY-2t-9rj" firstAttribute="leading" secondItem="8gd-Nt-nLg" secondAttribute="leading" constant="0.01" id="scM-xY-GOJ"/>
+                                                            </constraints>
                                                         </collectionViewCellContentView>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="customSize" width="219" height="152"/>
+                                                        <connections>
+                                                            <outlet property="cellImage" destination="FwY-2t-9rj" id="e0h-0t-r9h"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
@@ -294,15 +322,29 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vDs-Vt-6he">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" reuseIdentifier="CollectionViewCell" id="vDs-Vt-6he" customClass="CollectionViewCell" customModule="Davigram_InstagramProject" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="14.5" width="218" height="146"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LzD-nq-77k">
                                                             <rect key="frame" x="0.0" y="0.0" width="218" height="146"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Py3-CL-5nV">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="218" height="146"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Py3-CL-5nV" firstAttribute="leading" secondItem="LzD-nq-77k" secondAttribute="leading" constant="0.01" id="IC6-RU-LWo"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Py3-CL-5nV" secondAttribute="trailing" constant="0.01" id="Q3Z-fX-uVa"/>
+                                                                <constraint firstItem="Py3-CL-5nV" firstAttribute="top" secondItem="LzD-nq-77k" secondAttribute="top" constant="0.01" id="d4H-vE-1qo"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Py3-CL-5nV" secondAttribute="bottom" constant="0.01" id="w4Q-uL-so3"/>
+                                                            </constraints>
                                                         </collectionViewCellContentView>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="customSize" width="218" height="146"/>
+                                                        <connections>
+                                                            <outlet property="cellImage" destination="Py3-CL-5nV" id="1oy-pp-h0D"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
@@ -325,15 +367,29 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uOW-To-xNO">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="center" reuseIdentifier="CollectionViewCell" id="uOW-To-xNO" customClass="CollectionViewCell" customModule="Davigram_InstagramProject" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="14.5" width="222" height="146"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SgX-VN-RzV">
                                                             <rect key="frame" x="0.0" y="0.0" width="222" height="146"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xH3-8O-LWh">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="222" height="146"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="xH3-8O-LWh" secondAttribute="trailing" constant="0.01" id="Rwa-d7-wC3"/>
+                                                                <constraint firstItem="xH3-8O-LWh" firstAttribute="top" secondItem="SgX-VN-RzV" secondAttribute="top" constant="0.01" id="jMT-xX-Kwk"/>
+                                                                <constraint firstAttribute="bottom" secondItem="xH3-8O-LWh" secondAttribute="bottom" constant="0.01" id="rgE-et-o5m"/>
+                                                                <constraint firstItem="xH3-8O-LWh" firstAttribute="leading" secondItem="SgX-VN-RzV" secondAttribute="leading" constant="0.01" id="rqn-dZ-7Hh"/>
+                                                            </constraints>
                                                         </collectionViewCellContentView>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="customSize" width="222" height="146"/>
+                                                        <connections>
+                                                            <outlet property="cellImage" destination="xH3-8O-LWh" id="V4O-xF-bQu"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
@@ -356,15 +412,29 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yhx-O6-Q4J">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="4" contentMode="center" reuseIdentifier="CollectionViewCell" id="yhx-O6-Q4J" customClass="CollectionViewCell" customModule="Davigram_InstagramProject" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="14.5" width="220" height="146"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="avF-RA-T0s">
                                                             <rect key="frame" x="0.0" y="0.0" width="220" height="146"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wxy-rn-NDg">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="146"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="Wxy-rn-NDg" secondAttribute="trailing" constant="0.01" id="TAr-j1-96b"/>
+                                                                <constraint firstItem="Wxy-rn-NDg" firstAttribute="leading" secondItem="avF-RA-T0s" secondAttribute="leading" constant="0.01" id="YBI-Si-gY9"/>
+                                                                <constraint firstItem="Wxy-rn-NDg" firstAttribute="top" secondItem="avF-RA-T0s" secondAttribute="top" constant="0.01" id="Zo1-dR-ZXv"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Wxy-rn-NDg" secondAttribute="bottom" constant="0.01" id="qBX-U2-1Jm"/>
+                                                            </constraints>
                                                         </collectionViewCellContentView>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="customSize" width="220" height="146"/>
+                                                        <connections>
+                                                            <outlet property="cellImage" destination="Wxy-rn-NDg" id="tjZ-gg-2j9"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
@@ -393,15 +463,37 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="83z-SV-Pr5">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="6" contentMode="center" reuseIdentifier="CollectionViewCell" id="83z-SV-Pr5" customClass="CollectionViewCell" customModule="Davigram_InstagramProject" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="14.5" width="225" height="146"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SXS-SD-hxN">
                                                             <rect key="frame" x="0.0" y="0.0" width="225" height="146"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rtR-oc-FvE">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="225" height="146"/>
+                                                                </imageView>
+                                                                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7u-Cr-1zb">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="225" height="146"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="rtR-oc-FvE" secondAttribute="trailing" constant="0.01" id="19z-3h-Bhh"/>
+                                                                <constraint firstAttribute="trailing" secondItem="f7u-Cr-1zb" secondAttribute="trailing" constant="0.01" id="BAB-ul-idk"/>
+                                                                <constraint firstAttribute="bottom" secondItem="rtR-oc-FvE" secondAttribute="bottom" constant="0.01" id="Fcw-g9-NNh"/>
+                                                                <constraint firstItem="f7u-Cr-1zb" firstAttribute="leading" secondItem="SXS-SD-hxN" secondAttribute="leading" constant="0.01" id="Oug-eC-7XP"/>
+                                                                <constraint firstItem="rtR-oc-FvE" firstAttribute="leading" secondItem="SXS-SD-hxN" secondAttribute="leading" constant="0.01" id="Y0F-hB-sGR"/>
+                                                                <constraint firstItem="rtR-oc-FvE" firstAttribute="top" secondItem="SXS-SD-hxN" secondAttribute="top" constant="0.01" id="ZKN-Yv-WSx"/>
+                                                                <constraint firstItem="f7u-Cr-1zb" firstAttribute="top" secondItem="SXS-SD-hxN" secondAttribute="top" constant="0.01" id="gvU-PL-0nt"/>
+                                                                <constraint firstAttribute="bottom" secondItem="f7u-Cr-1zb" secondAttribute="bottom" constant="0.01" id="scP-Di-bVF"/>
+                                                            </constraints>
                                                         </collectionViewCellContentView>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="customSize" width="225" height="146"/>
+                                                        <connections>
+                                                            <outlet property="cellImage" destination="rtR-oc-FvE" id="wg7-8Y-zeB"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
@@ -418,15 +510,29 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hJp-2c-uE9">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="5" contentMode="center" reuseIdentifier="CollectionViewCell" id="hJp-2c-uE9" customClass="CollectionViewCell" customModule="Davigram_InstagramProject" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="16" width="221" height="143"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mYD-8U-MfO">
                                                             <rect key="frame" x="0.0" y="0.0" width="221" height="143"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YWV-RT-RLj">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="221" height="143"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="YWV-RT-RLj" firstAttribute="leading" secondItem="mYD-8U-MfO" secondAttribute="leading" constant="0.01" id="46A-gO-c2y"/>
+                                                                <constraint firstAttribute="trailing" secondItem="YWV-RT-RLj" secondAttribute="trailing" constant="0.01" id="AeL-6V-vwY"/>
+                                                                <constraint firstItem="YWV-RT-RLj" firstAttribute="top" secondItem="mYD-8U-MfO" secondAttribute="top" constant="0.01" id="eSX-hX-xvZ"/>
+                                                                <constraint firstAttribute="bottom" secondItem="YWV-RT-RLj" secondAttribute="bottom" constant="0.01" id="xJI-W9-8cW"/>
+                                                            </constraints>
                                                         </collectionViewCellContentView>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="customSize" width="221" height="143"/>
+                                                        <connections>
+                                                            <outlet property="cellImage" destination="YWV-RT-RLj" id="KiB-Jw-xdq"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
@@ -512,6 +618,15 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="globe" catalog="system" id="W7T-Ge-cm5"/>
                     <size key="freeformSize" width="414" height="1800"/>
+                    <connections>
+                        <outlet property="comedyCV" destination="tON-Um-xlo" id="GuV-RA-EJ0"/>
+                        <outlet property="fitnessCV" destination="JSA-5e-UB3" id="jjA-EH-KLX"/>
+                        <outlet property="foodCV" destination="cf7-UV-f0g" id="sbK-6E-Ch5"/>
+                        <outlet property="hobbyCV" destination="KOz-Yn-ppt" id="Qqs-Gf-hwc"/>
+                        <outlet property="newCV" destination="73R-y9-Wmm" id="AUZ-WQ-9uq"/>
+                        <outlet property="nsfwCV" destination="9kd-aZ-cIt" id="CEu-XS-w2E"/>
+                        <outlet property="travelCV" destination="PSY-ww-D5n" id="cAy-M1-8zZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BxF-do-I4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
