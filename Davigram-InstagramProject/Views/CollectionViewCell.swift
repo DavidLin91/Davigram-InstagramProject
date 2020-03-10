@@ -17,3 +17,5 @@ class CollectionViewCell: UICollectionViewCell {
         cellImage.kf.setImage(with: URL(string: photo.photoURL))
     }
 }
+
+

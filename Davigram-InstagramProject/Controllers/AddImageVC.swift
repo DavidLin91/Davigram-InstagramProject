@@ -40,10 +40,11 @@ class AddImageVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        categoryData = ["funny", "travel", "food", "fitness", "hobby", "nsfw"].map{ ($0.capitalized)}.sorted()
+        categoryData = ["new", "funny", "travel", "food", "fitness", "hobby", "nsfw"].map{ ($0.capitalized)}.sorted()
         categoryPicker.dataSource = self
         categoryPicker.delegate = self
 //        postButton.isEnabled = false
+        photoTextView.delegate = self
         
     }
     
@@ -102,14 +103,14 @@ class AddImageVC: UIViewController {
                     self?.showAlert(title: "Error uploading photo", message: "\(error.localizedDescription)")
                 }
             case .success(let url):
-                self?.updateItemImageURL(url, documentId: documentId)
+                self?.updatePhotoURL(url, documentId: documentId)
                 
             }
         }
     }
     
-    private func updateItemImageURL(_ url: URL, documentId: String) {
-        Firestore.firestore().collection(DatabaseService.photosCollection).document(documentId).updateData(["imageURL": url.absoluteString]) { [weak self] (error) in
+    private func updatePhotoURL(_ url: URL, documentId: String) {
+        Firestore.firestore().collection(DatabaseService.photosCollection).document(documentId).updateData(["photoURL": url.absoluteString]) { [weak self] (error) in
             if let error = error {
                 DispatchQueue.main.async {
                     self?.showAlert(title: "Fail to update item", message: "\(error.localizedDescription)")
@@ -157,5 +158,16 @@ extension AddImageVC: UIImagePickerControllerDelegate, UINavigationControllerDel
         }
         selectedPhoto = image
         dismiss(animated: true)
+    }
+    
+}
+
+extension AddImageVC: UITextViewDelegate {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
     }
 }

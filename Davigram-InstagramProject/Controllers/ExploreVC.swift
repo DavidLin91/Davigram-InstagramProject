@@ -22,6 +22,7 @@ class ExploreVC: UIViewController {
     
     private var listener: ListenerRegistration?
     
+    @IBOutlet weak var blurView: UIView!
     
     private var newPhotos = [Photo]() {
         didSet {
@@ -86,6 +87,8 @@ class ExploreVC: UIViewController {
         super.viewDidLoad()
         newCV.dataSource = self
         newCV.delegate = self
+        travelCV.delegate = self
+        travelCV.dataSource = self
         comedyCV.dataSource = self
         comedyCV.delegate = self
         foodCV.dataSource = self
@@ -108,7 +111,13 @@ class ExploreVC: UIViewController {
                     }
                 } else if let snapshot = snapshot {
                     let photos = snapshot.documents.map { Photo($0.data())}
-                    self?.newPhotos = photos
+                    self?.newPhotos = photos.filter{$0.category == "Nsfw"}
+                    self?.travelPhotos = photos.filter{$0.category == "Travel"}
+                    self?.comedyPhotos = photos.filter{$0.category == "Comedy"}
+                    self?.foodPhotos = photos.filter{$0.category == "Food"}
+                    self?.hobbyPhotos = photos.filter{$0.category == "Hobby"}
+                    self?.nsfwPhotos = photos.filter{$0.category == "Nsfw"}
+                    self?.newPhotos = photos.filter{$0.category == "New"}
                 }
             })
         
@@ -166,7 +175,6 @@ extension ExploreVC: UICollectionViewDataSource {
     
     
     
-    
 }
 
 
@@ -177,14 +185,9 @@ extension ExploreVC: UICollectionViewDelegateFlowLayout {
         return 1
     }
     
-    
-    
-    
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
     }
-    
-    
     
     
     

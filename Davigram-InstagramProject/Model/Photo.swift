@@ -21,6 +21,11 @@ struct Photo {
 extension Photo {
     init(_ dictionary: [String: Any]) {
         self.photoId = dictionary["photoId"] as? String ?? "no item name"
-        
+        self.postedDate = dictionary["posteddate"] as? Date ?? Date()
+        self.userName = dictionary["userName"] as? String ?? "no name"
+        self.userId = dictionary["userId"] as? String ?? "no user Id"
+        self.photoURL = dictionary["photoURL"] as? String ?? "no photo URL"
+        self.photoText = dictionary["photoText"] as? String ?? "no text"
+        self.category = dictionary["category"] as? String ?? "no category"
     }
 }
